@@ -37,7 +37,7 @@ Estado do Projeto
 Como Visualizar
 1. Clone o repositório usando o comando:
    ```bash
-   git clone <URL_DO_REPOSITÓRIO>
+   git clone https://github.com/josedhyogo/TechBlog
    ```
 2. Abra o arquivo `index.html` em seu navegador.
 Colaboração
