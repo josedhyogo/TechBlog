@@ -1,4 +1,4 @@
-TechBlog
+<img src="(https://www.canva.com/design/DAGcInbPJCY/WjofRmCyaa0iNsZGmxLtvg/view)" alt="Texto Alternativo">
 
 TechBlog é um projeto web voltado para compartilhamento de dicas e artigos sobre o mundo da tecnologia. O objetivo do site é fornecer informações relevantes de forma organizada e acessível, com foco em três categorias principais: Eletrônicos, Hardware e Programação.
 Estrutura do Projeto
