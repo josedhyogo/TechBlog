@@ -1,48 +1,194 @@
+@font-face {
+    font-family: poppins;
+    src: url(/fonts/Poppins/Poppins-Light.ttf);
+}
 * {
     padding: 0px;
     margin: 0px;
     vertical-align:baseline;
     list-style:none;
     border:0px;
+    font-family: poppins;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    overflow-x: hidden;
+}
 
-}
 #Nav_container{
-    background-image:linear-gradient(#17B9EB,#54b0cc,#588391 ) ;
+    background-image:linear-gradient(#178EF5,#17B9EB,#54b0cc) ;
     text-align: center;
-    padding-bottom: -150px;
+    padding-top: 100px;
+    margin-right: 0px;
 }
-nav#navegacao > a{
+nav#navegacao li > a{
     position: relative;
-    bottom:75px;
+    bottom:53px;
     padding: 10px;
+    
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
+    background-color: #178EF5;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
-
+nav#navegacao li > a:hover{
+    background-color: white;
+    color: black;
+}
 #Main_container{
     margin: auto;
     display: flex;
     justify-content: center;
-
-    padding: 10px;
+    gap: 25px;
+    background-image: linear-gradient(#B07D62 ,#AF7D64,#995c44);
+    padding: 30px 20px;
     border: black solid 1px;
     border-radius: 5px;
-    max-width: 720px;
+    box-sizing: border-box;
+    max-height: 600px;
+    position: relative;
+    top: -75px;
+    
+}
+@media (max-width:420px){
+    #Main_container{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        background-image: linear-gradient(#B07D62 ,#AF7D64,#995c44);
+        padding: 10px 5px;
+        border: black solid 1px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        position: relative;
+        top: -75px; 
+    }
 }
 
-#eletronicos{
-    
-    border:black solid 2px;
+#Main_container > section{
+    background-color: white;
+    padding: 25px;
+    border:black solid 1px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-#hardware{
-    border:black solid 2px;
+@media (max-width: 420px){
+    #Main_container > section{
+        background-color: white;
+        padding: 0px;
+        border:black solid 1px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadowa 0.3s ease;
+    }
 }
-#programacao{
-    border: black solid 2px;
+
+#Main_container > section:hover{
+    transform: scale(1.12);
+    box-shadow: 45px rgb(0, 0, 3) ;
 }
+/* @media (max-width: 420px){
+    #Main_container > section:hover{
+        tras
+    }
+} */
+
+p{
+    position: relative;
+    left: 13px;
+}
+
+#header_container{
+    text-align: center;
+    position: relative;
+    top: -100px;
+    font-size: 20px;
+}
+@media (max-width: 420px) {
+    #header_container h2 {
+        font-size: 16px; /* Reduz o tamanho da fonte em dispositivos menores */
+    }
+ 
+}
+
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 img{
-    display: block;
+    position: relative;
+    bottom:135px;
+    left: 65px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    background-color: #424242;
+    text-align: center;
+    color: #FFFF;
+    padding: 20px;
+}
+footer a{
+    color: #54b0cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Menu */
+#navegacao{position: relative;
+}
+#menu {
+    list-style-type: style none;
+    padding: 0;
     margin: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#menu li {
+    display: inline-block;
+}
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media (max-width: 420px) {
+    #menu{
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        
+    }
+    #menu li {
+        text-align: center;
+        padding: 2px ;
+    }
+    #menu-toggle{
+        display: block;
+    }
+    #menu.show{
+        display: flex;
+    }
+    #header_container{
+        position: relative;
+        z-index: 5;
+    }
+    
 }
