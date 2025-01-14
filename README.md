@@ -1,4 +1,4 @@
-<img src="file:///C:/Users/C%C3%ADcero/Downloads/Design_sem_nome__4_-removebg-preview.png" alt=" ">
+<img src="/images/logoDef.png" alt=" ">
 
 TechBlog é um projeto web voltado para compartilhamento de dicas e artigos sobre o mundo da tecnologia. O objetivo do site é fornecer informações relevantes de forma organizada e acessível, com foco em três categorias principais: Eletrônicos, Hardware e Programação.
 Estrutura do Projeto
