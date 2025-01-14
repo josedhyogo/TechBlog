@@ -24,7 +24,7 @@ html, body {
     padding-top: 100px;
     margin-right: 0px;
 }
-nav#navegacao li > a{
+nav#navegacao li  a{
     position: relative;
     bottom:53px;
     padding: 10px;
@@ -93,11 +93,6 @@ nav#navegacao li > a:hover{
     transform: scale(1.12);
     box-shadow: 45px rgb(0, 0, 3) ;
 }
-/* @media (max-width: 420px){
-    #Main_container > section:hover{
-        tras
-    }
-} */
 
 p{
     position: relative;
@@ -126,7 +121,7 @@ span{
 img{
     position: relative;
     bottom:135px;
-    left: 65px;
+    left: 100px;
     max-width: 100%;
     height: auto;
 }
@@ -164,17 +159,25 @@ footer a{
     display: none;
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: px;
     cursor: pointer;
+    position: relative;
+    left: 10px;
 }
 @media (max-width: 420px) {
     #menu{
-        display: none;
+        display: flex;
         position: absolute;
-        top: 100px;
+        top: 95px;
         left: 0;
         width: 100%;
-        
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform:translateY(-10px)
+    }
+    nav#navegacao li a{
+        font-size: 15px;
     }
     #menu li {
         text-align: center;
@@ -184,7 +187,10 @@ footer a{
         display: block;
     }
     #menu.show{
-        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transition: opacity 0.3s ease, visibility 0s 0s, transform 0.3s ease;
     }
     #header_container{
         position: relative;
