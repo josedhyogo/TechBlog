@@ -1,34 +1,200 @@
+@font-face {
+    font-family: poppins;
+    src: url(/fonts/Poppins/Poppins-Light.ttf);
+}
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     vertical-align:baseline;
     list-style:none;
-    border:0
+    border:0px;
+    font-family: poppins;
 }
-nav#navegacao > a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-  
-}
-
-#Main_container{
+html, body {
+    height: 100%;
+    margin: 0;
     display: flex;
-    align-content: center;
-    align-items: center;
-    padding: 10px;
-   border: black solid 5px;
-   border-radius: 5px;
-    
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    overflow-x: hidden;
 }
 
-#eletronicos{
+#Nav_container{
+    background-image:linear-gradient(#178EF5,#17B9EB,#54b0cc) ;
+    text-align: center;
+    padding-top: 100px;
+    margin-right: 0px;
+}
+nav#navegacao li  a{
+    position: relative;
+    bottom:53px;
+    padding: 10px;
     
-    border:black solid 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    background-color: #178EF5;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
-#hardware{
-    border:black solid;
+nav#navegacao li > a:hover{
+    background-color: white;
+    color: black;
 }
-#programacao{
-    border: black solid;
+#Main_container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-image: linear-gradient(#B07D62 ,#AF7D64,#995c44);
+    padding: 30px 20px;
+    border: black solid 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-height: 600px;
+    position: relative;
+    top: -75px;
+    
+}
+@media (max-width:420px){
+    #Main_container{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        background-image: linear-gradient(#B07D62 ,#AF7D64,#995c44);
+        padding: 10px 5px;
+        border: black solid 1px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        position: relative;
+        top: -75px; 
+    }
+}
+
+#Main_container > section{
+    background-color: white;
+    padding: 25px;
+    border:black solid 1px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media (max-width: 420px){
+    #Main_container > section{
+        background-color: white;
+        padding: 0px;
+        border:black solid 1px;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadowa 0.3s ease;
+    }
+}
+
+#Main_container > section:hover{
+    transform: scale(1.12);
+    box-shadow: 45px rgb(0, 0, 3) ;
+}
+
+p{
+    position: relative;
+    left: 13px;
+}
+
+#header_container{
+    text-align: center;
+    position: relative;
+    top: -100px;
+    font-size: 20px;
+}
+@media (max-width: 420px) {
+    #header_container h2 {
+        font-size: 16px; /* Reduz o tamanho da fonte em dispositivos menores */
+    }
+ 
+}
+
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    position: relative;
+    bottom:135px;
+    left: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    background-color: #424242;
+    text-align: center;
+    color: #FFFF;
+    padding: 20px;
+}
+footer a{
+    color: #54b0cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* Menu */
+#navegacao{position: relative;
+}
+#menu {
+    list-style-type: style none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#menu li {
+    display: inline-block;
+}
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: px;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+}
+@media (max-width: 420px) {
+    #menu{
+        display: flex;
+        position: absolute;
+        top: 95px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform:translateY(-10px)
+    }
+    nav#navegacao li a{
+        font-size: 15px;
+    }
+    #menu li {
+        text-align: center;
+        padding: 2px ;
+    }
+    #menu-toggle{
+        display: block;
+    }
+    #menu.show{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transition: opacity 0.3s ease, visibility 0s 0s, transform 0.3s ease;
+    }
+    #header_container{
+        position: relative;
+        z-index: 5;
+    }
+    
 }

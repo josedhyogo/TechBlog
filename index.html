@@ -7,19 +7,22 @@
     <title>Home - Tech Blog</title>
 </head>
 <body>
-    
+
     <div id="Nav_container">
             <!-- Titulo e Navegação entre paginas -->
-            <img src="images/logo.png" alt="" style="max-width: 165px;">
             <nav id="navegacao">
-                <a href="Eletronicos/eletronicos.html">Eletrônicos</a>
-                <a href="Hardware/hardware.html">Hardware</a>
-                <a href="Programacao/programacao.html">Programação</a>
+                <button id="menu-toggle" aria-label = "Abrir menu" style="color: black;">☰</button>
+                <ul id="menu">
+                    <li><a href="Eletronicos/eletronicos.html">Eletrônicos</a></li>
+                    <li><a href="Hardware/hardware.html">Hardware</a></li>
+                    <li><a href="Programacao/programacao.html">Programação</a></li>
+                </ul>
             </nav>
     </div>
+    <img src="images/Design_sem_nome__1_-removebg-preview.png" alt="" style="max-width: 165px;">
         <!--Cabeçalho -->
         <section id="header_container">
-            <h2 id="titulo">Seu portal essencial de dicas sobre Eletrônicos, Hardware e Programação.<br> Dicas toda semana!</h2>
+            <h2 id="titulo">Seu portal essencial de dicas sobre Eletrônicos, Hardware e Programação. Dicas toda semana!</h2>
         </section>
 <main id="Main_container">
         <!-- Seções de Dicas -->
@@ -45,17 +48,24 @@
 
         Siga-nos:
         <!--Redes Sociais -->
-        <ul>
-            <li><a href="#" style="text-decoration: none;">Instagram</a>
-            </li>
-            <li><a href="#" style="text-decoration: none;">Twitter</a>
-            </li>
-            <li><a href="#" style="text-decoration: none;">LinkendIn</a>
-            </li>
-        </ul>
-            <br>
+        <br>
+            <a href="#" style="text-decoration: none;">Instagram</a>
+            <a href="#" style="text-decoration: none;">Twitter</a>
+            <a href="#" style="text-decoration: none;">LinkendIn</a>
+        <br>
         Copyright © 2025 - Todos os direitos reservados.
      </p>
     </footer>
 </body>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('click', () =>{
+        menu.classList.toggle('show');
+    });
+
+    
+
+</script>
 </html>
