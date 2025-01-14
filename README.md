@@ -1,14 +1,45 @@
-O TechBlog é uma página de dicas de tecnologia ou seja aborda dicas/artigos sobre assuntos diversos do mundo da tecnologia. O projeto terá 4 páginas principais:
+TechBlog
 
-•Home(Index)
-•Eletronicos
-•Hardware
-•Programacao
+TechBlog é um projeto web voltado para compartilhamento de dicas e artigos sobre o mundo da tecnologia. O objetivo do site é fornecer informações relevantes de forma organizada e acessível, com foco em três categorias principais: Eletrônicos, Hardware e Programação.
+Estrutura do Projeto
+Páginas principais
+1. Home (Index):
+   - Apresenta as três categorias do site com descrições breves sobre o que cada uma aborda.
+   - Inclui um menu de navegação com links para as páginas das categorias: Eletrônicos, Hardware e Programação.
+   - Contém um rodapé com informações fixas, presente em todas as páginas.
 
-E com exceção da página Home, elas irão ter 3 artigos(3 páginas) cada uma.Confira a pasta Eletrônicos para entender melhor.
+2. Eletrônicos:
+   - Página principal da categoria "Eletrônicos", com uma introdução ao tema.
+   - Contém três artigos dedicados a tópicos específicos dessa categoria.  
 
-A página Home contém um menu de navegação com links que levam as 3 páginas correspondente de cada categoria,um rodapé (que deve ser incluso em todas as páginas, junto do menu de navegação).Além disso as 3 opções de dicas estarão enfileirados na página com um breve texto explicando sobre o que a categoria abrange, com isso cada categoria terá sua respectiva imagem.
+3. Hardware (em desenvolvimento):
+   - Página principal da categoria "Hardware" e seus respectivos artigos.
+   - Contém três artigos dedicados a tópicos específicos dessa categoria.
+4. Programação (em desenvolvimento):
+   - Página principal da categoria "Programação" e seus respectivos artigos.
+   - Contém três artigos dedicados a tópicos específicos dessa categoria.
 
-No momento apenas a página Home eEletrônicos(e seus 3 artigos)está com o html completo.
+Estilização
+As cores principais escolhidas para o design do site incluem tons de azul, castanho e preto, com uma paleta de cores serenas ou frias. Ainda estamos em fase de pesquisa e testes para definir uma identidade visual que combine com o objetivo do site.
+Estado do Projeto
+- [x] Estrutura da página Home concluída.
+- [x] Estrutura da categoria Eletrônicos concluída (incluindo seus 3 artigos).
+- [x] Desenvolvimento das páginas Hardware e Programação em andamento.
+- [ ] Finalização do estilo e ajustes responsivos.
+- [ ] Hospedagemm do projeto
 
-Com relação a estilização das páginas ,tenho algumas cores anotadas(azul,castanho,preto com alguns tons serenos ou cores frias ).De resto não há nada definido ainda, se quiser pesquisar e achar algo interessante,me manda .
+Como Visualizar
+1. Clone o repositório usando o comando:
+   ```bash
+   git clone <URL_DO_REPOSITÓRIO>
+   ```
+2. Abra o arquivo `index.html` em seu navegador.
+Colaboração
+
+Próximos Passos
+- Refinamento do design e adaptação para dispositivos móveis.
+- Adicionar exemplos práticos e imagens para cada artigo.
+  
+Tecnologias Utilizadas
+- HTML5 para estruturação.
+- CSS3 para estilização (em desenvolvimento).
