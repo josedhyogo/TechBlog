@@ -27,7 +27,11 @@ Estado do Projeto
 - [x] Estrutura da página Home concluída.
 - [x] Estrutura da categoria Eletrônicos concluída (incluindo seus 3 artigos).
 - [x] Desenvolvimento das páginas Hardware e Programação em andamento.
-- [ ] Finalização do estilo e ajustes responsivos.
+- Finalização do estilo e ajustes responsivos.
+     - [x] index.html
+     - [ ] eletronicos
+     - [ ] hardware
+     - [ ] programacao
 - [ ] Hospedagemm do projeto
 
 Como Visualizar
@@ -39,9 +43,10 @@ Como Visualizar
 Colaboração
 
 Próximos Passos
-- Refinamento do design e adaptação para dispositivos móveis.
-- Adicionar exemplos práticos e imagens para cada artigo.
+- [ ]Refinamento do design e adaptação para dispositivos móveis.
+- [x]Adicionar exemplos práticos e imagens para cada artigo.
   
 Tecnologias Utilizadas
 - HTML5 para estruturação.
 - CSS3 para estilização (em desenvolvimento).
+- JavaScript para Interações
