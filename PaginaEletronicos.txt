@@ -1,0 +1,4 @@
+1- Estilizar os artigos ✅
+2- Corrigir a navegação (Em andamento)
+3- Iniciar a responsividade
+4- Subi

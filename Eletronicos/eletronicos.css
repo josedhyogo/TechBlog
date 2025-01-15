@@ -20,9 +20,14 @@ html, body {
 }
 
 #container_nav{
+    position:relative ;
     background-image: linear-gradient(#178EF5,#17B9EB,#54b0cc);
-    text-align: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
     padding-top: 100px;
+    margin-right: 0;
+    
 }
 #navegacao li  a{
     position: relative;
@@ -39,17 +44,40 @@ html, body {
 #header_container{
     text-align: center;
     position: relative;
+    bottom: 200px;
+}
+#container{
+    position: relative;
     bottom: 120px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+    border: black solid 1px;
+    padding: 30px 20px;
+    background-image:linear-gradient(#B07D62,#995c44) ;
+}
+.artigo1,.artigo2,.artigo3{
+    border: black solid 1px;
+    border-radius: 15px;
+    height: 140px;
+    max-width: 720px;
+    background-color: #FFFf;
+    padding: 20px;
+    
 }
 
 img{
     position: relative;
-    bottom: 145px;
+    bottom:173px;
+    left: 100px;
     max-width: 100%;
     height: auto;
 }
 
 footer{
+ 
     background-color: #424242;
     text-align: center;
     color: #FFFF;
