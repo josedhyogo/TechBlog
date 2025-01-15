@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="eletronicos.css">
     <title>Eletrônicos - Tech Blog</title>
+    <style>
+        @font-face {
+            font-family: roboto;
+            src: url(../fonts/Roboto/static/Roboto-Light.ttf);
+        }
+    </style>
 </head>
-<body>
-    <div id="container_Nav">
-            <!-- Titulo e Navegação entre paginas -->
-           <img src="/images/Design_sem_nome__1_-removebg-preview.png" alt="" style="max-width: 165px;">
-            <nav id="navegacao">
-                <a href="/index.html">Home</a>
-                <a href="/Hardware/hardware.html">Hardware</a>
-                <a href="/Programacao/programacao.html">Programação</a>
+<body> 
+    <div id="container_nav">
+         <!-- Titulo e Navegação entre paginas -->   
+         <nav id="navegacao">
+            <!-- <button id="menu-toggle" aria-label="Abrir menu">☰</button> -->
+            <ul id="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Hardware/hardware.html">Hardware</a></li>
+                <li><a href="/Programacao/programacao.html">Programação</a></li>
+            </ul>
             </nav>
     </div>
+    <img src="/images/Design_sem_nome__1_-removebg-preview.png" alt="" style="max-width: 165px;">
         <!--Cabeçalho -->
         <section id="header_container">
-            <h2>Eletrônicos</h2>
+            <h2 style="font-size: 35px; font-family: roboto;" >Eletrônicos</h2>
             <h3>Seu portal essencial de dicas sobre Eletrônicos, Hardware e Programação.<br> Dicas toda semana!</h2>
             </section>
         <!-- Artigos -->
     <main id="container">
         <a href="Artigos/artigo1.html" style="text-decoration: none; color: black;">
             <section class="artigo1">
-                <h2>Os 5 Gadgets Essenciais para 2025</h2>
+                <h2 >Os 5 Gadgets Essenciais para 2025</h2>
                 <p>Descubra quais são os 5 dispositivos que se destacam este ano, incluindo smartwatches avançados, fones de ouvido inteligentes e óculos de realidade aumentada.</p>
             </section>
         </a>
