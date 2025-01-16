@@ -6,34 +6,25 @@
     padding: 0;
     margin: 0;
     vertical-align: 0;
-    list-style: none;
+    list-style: none; 
     border: 0;
     font-family: poppins;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Organiza os elementos verticalmente */
-    overflow-x: hidden;
-}
 
 #container_nav{
     position:relative ;
+    text-align: end;
     background-image: linear-gradient(#178EF5,#17B9EB,#54b0cc);
+    padding-top: 27px;
     display: flex;
     flex-direction: row;
     justify-content: end;
-    padding-top: 100px;
-    margin-right: 0;
-    
 }
 #navegacao li  a{
     position: relative;
-    bottom:53px;
+    bottom:13px;
     padding: 10px;
-    text-decoration: none;
     color: white;
     font-size: 18px;
     margin: 0;
@@ -41,10 +32,11 @@ html, body {
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
+
 #header_container{
     text-align: center;
     position: relative;
-    bottom: 200px;
+    bottom: 150px;
 }
 #container{
     position: relative;
